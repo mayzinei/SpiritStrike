@@ -12,6 +12,7 @@ import Web_Img from "../../assets/images/web.png";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import { Helmet } from "react-helmet";
+import Ytvideo from "../components/Ytvideo";
 
 const Home = (props) => {
 	const works = [
@@ -81,7 +82,7 @@ const Home = (props) => {
 								We developer complex interface systems <br /> for Web,
 								Mobile & Ar
 							</h3>
-							<img src={Home_Img} className="img-fluid headline" />
+							<Ytvideo />
 						</div>
 					</div>
 				</div>
