@@ -1,20 +1,20 @@
 import React from "react";
 import YouTube from "react-youtube";
+import "../../assets/css/Cus.css";
 
 class VideoPlayer extends React.Component {
 	render() {
 		const opts = {
 			width: "100%",
-			height: "400px",
+			height: "100%",
 			playerVars: {
-				// https://developers.google.com/youtube/player_parameters
 				autoplay: 0,
 			},
 		};
 
 		return (
-			<div className="container-fluid">
-				<YouTube videoId="rDPN-ML5wKQ" opts={opts} />
+			<div className="ytvideo h-[500px]">
+				<YouTube videoId="rDPN-ML5wKQ" opts={opts} className="ytvideo" />
 			</div>
 		);
 	}

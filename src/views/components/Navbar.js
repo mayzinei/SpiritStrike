@@ -13,7 +13,8 @@ const Navbar = (props) => {
 			<nav className="navbar navbar-expand-lg bg-body-tertiary z-1000">
 				<div className="container">
 					<a className="navbar-brand fw-bold" href="#">
-						Sprit Strike
+						<span className="text-danger">S</span>prit{" "}
+						<span className="text-danger">S</span>trike
 					</a>
 					<div
 						className={`${open ? "show" : ""} menu-icon`}

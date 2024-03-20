@@ -16,12 +16,12 @@ import Ytvideo from "../components/Ytvideo";
 
 const Home = (props) => {
 	const works = [
-		{ id: 1, src: Home_Img, subtitle: "Sportsbook", disc: "Rewind" },
-		{ id: 3, src: Home_Img, subtitle: "Sportsbook", disc: "Rewind" },
-		{ id: 2, src: Home_Img, subtitle: "Sportsbook", disc: "Rewind" },
-		{ id: 4, src: Home_Img, subtitle: "Sportsbook", disc: "Rewind" },
-		{ id: 5, src: Home_Img, subtitle: "Sportsbook", disc: "Rewind" },
-		{ id: 6, src: Home_Img, subtitle: "Sportsbook", disc: "Rewind" },
+		{ id: 1, src: Home_Img, enrollBtn: "View Detail", disc: "Taekwondo" },
+		{ id: 3, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
+		{ id: 2, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
+		{ id: 4, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
+		{ id: 5, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
+		{ id: 6, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
 	];
 	const services = [
 		{ id: 1, src: Service_Img_1, title: "Research & Analysis" },
@@ -76,29 +76,31 @@ const Home = (props) => {
 			<section className="container">
 				<div className="row">
 					<div className="col">
-						<div className="my-lg-5 py-5 ">
-							<h1 className="fw-light my-3 headline">Digital Agency</h1>
-							<h3 className="mb-5 display-5 fw-bold mb-5 pb-3 headline">
-								We developer complex interface systems <br /> for Web,
-								Mobile & Ar
+						<div className="mt-lg-5 py-5 ">
+							<h3 className="fw-light my-1 md:my-3 headline">
+								Empower Your Spirit
 							</h3>
+							<h1 className="mb-3 md:mb-5 display-5 fw-bold headline text-uppercase md:display-3">
+								It's never too late <br /> to{" "}
+								<span className="text-danger">defence yourself</span>.
+							</h1>
 							<Ytvideo />
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* Work section */}
+			{/* Classes section */}
 			<div className="bg-light">
 				<section className="container">
 					<div className="row">
 						<div className="col">
 							<div className="my-5">
 								<h2 className="fw-bold text-center headline mb-5">
-									Our Work Select Projects
+									Our Feature Classes
 								</h2>
 
-								<div className="row row-cols-1 row-cols-md-2 g-5">
+								<div className="row row-cols-1 row-cols-md-3 gy-4">
 									{works.map((work) => {
 										return (
 											<div className="col headline " key={work.id}>
@@ -112,9 +114,9 @@ const Home = (props) => {
 														<h5 className="card-title fw-bold">
 															{work.disc}
 														</h5>
-														<p className="card-text">
-															{work.subtitle}
-														</p>
+														<button className="btn btn-danger">
+															{work.enrollBtn}
+														</button>
 													</div>
 												</div>
 											</div>
