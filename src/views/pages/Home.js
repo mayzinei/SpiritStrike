@@ -1,5 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
-import Home_Img from "../../assets/images/home-1.png";
+import BscDefense from "../../assets/images/basic defense.jpg";
+import Taekwondo from "../../assets/images/taekwondo.jpg";
+import Judo from "../../assets/images/judo.jpg";
+import Karatae from "../../assets/images/karate.jpg";
+import JiuJ from "../../assets/images/Jiu-Jitsu.jpg";
+import MuayThai from "../../assets/images/muay thai.jpg";
 import Service_Img_1 from "../../assets/images/our_service_1.png";
 import Service_Img_2 from "../../assets/images/our_service_2.png";
 import Service_Img_3 from "../../assets/images/our_service_3.png";
@@ -16,12 +21,17 @@ import Ytvideo from "../components/Ytvideo";
 
 const Home = (props) => {
 	const works = [
-		{ id: 1, src: Home_Img, enrollBtn: "View Detail", disc: "Taekwondo" },
-		{ id: 3, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
-		{ id: 2, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
-		{ id: 4, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
-		{ id: 5, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
-		{ id: 6, src: Home_Img, enrollBtn: "View Detail", disc: "Karatae" },
+		{
+			id: 1,
+			src: BscDefense,
+			enrollBtn: "View Detail",
+			disc: "Basic Defense",
+		},
+		{ id: 2, src: Taekwondo, enrollBtn: "View Detail", disc: "Taekwondo" },
+		{ id: 3, src: Judo, enrollBtn: "View Detail", disc: "Judo" },
+		{ id: 4, src: Karatae, enrollBtn: "View Detail", disc: "Karatae" },
+		{ id: 5, src: JiuJ, enrollBtn: "View Detail", disc: "Jiu-Jitsu" },
+		{ id: 6, src: MuayThai, enrollBtn: "View Detail", disc: "Myay Thai" },
 	];
 	const services = [
 		{ id: 1, src: Service_Img_1, title: "Research & Analysis" },
@@ -96,9 +106,12 @@ const Home = (props) => {
 					<div className="row">
 						<div className="col">
 							<div className="my-5">
-								<h2 className="fw-bold text-center headline mb-5">
+								<h5 className="fw-bold text-center headline">
 									Our Feature Classes
-								</h2>
+								</h5>
+								<h3 className="fw-light py-1 headline text-center mb-5">
+									Encourage Your Kids To Learn
+								</h3>
 
 								<div className="row row-cols-1 row-cols-md-3 gy-4">
 									{works.map((work) => {
